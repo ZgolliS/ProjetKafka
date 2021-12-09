@@ -1,0 +1,34 @@
+<table class="table table-dark table-striped w-100">
+<thead>
+<tr>
+<th>NAME</th>    
+<th>DATE</th>
+<th>POINT</th>
+</tr>
+</thead>
+<tbody>
+    {% for comp in competitions%}
+ <tr>
+ 
+<td>  {{comp['name']}}</td>
+<td> {{comp['date']}}</td>
+<td>    {{comp['numberOfPlaces']}}</td>
+
+ </tr> 
+ {% endfor %} 
+
+
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
